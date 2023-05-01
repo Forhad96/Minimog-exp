@@ -1,0 +1,169 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    color: #000;
+
+}
+
+.container-fluid{
+    width: 88%;
+    height: auto;
+}
+
+img{
+    border-style: none;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+/* castom class */
+.commonBtn{
+    background-color: #1c4a3e;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 7px;
+
+
+}
+
+.green{
+    color: #367e62;
+}
+/* .text-shadow{
+    box-shadow: 0px 40px 0px -1px rgba(217,67,69,0.75);
+} */
+/* !style for header */
+
+.nav-link{
+    /* font-size: 18px; */
+    color: black;
+    font-weight: 500;
+    margin-right: 20px;
+    transition: all 3.ms;
+}
+
+.nav-link:hover{
+    color: #367e62;
+}
+
+/* !style for sectionOne */
+
+.sectionOne{
+    margin-top: 140px;
+}
+
+.sectionOne__leftTitle{
+    /* font-size: 65px; */
+    font-size: 4cqw;
+    line-height: 110px;
+    font-weight: 800;
+    color: #000;
+}
+.sectionOne__leftText{
+    font-size: 18px;
+    color: #777;
+}
+
+.btn2{
+    color: #1c4a3e;
+    background: #fff;
+    outline:  2px solid #1c4a3e;
+    border: none;
+
+}
+
+.sectionOne__right{
+    position: relative;
+}
+.playbtn{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.playbtn:hover{
+    transform: scale(1.1); 
+    transition: all .2s ease-in-out; 
+}
+/* !style for sectionTwo */
+
+.sectionTwo{
+    padding: 80px 0;
+    text-align: center;
+}
+.sectionTwo__titleSmall{
+    font-size: 24px;
+    color: #1c4a3e;
+    /* position: relative; */
+}
+/* .text-shadow::after{
+    content: "cjcjj";
+    width: 100%;
+    box-shadow: 0px 15px 10px 0px red;
+    position: relative;
+
+} */
+.sectionTwo__title{
+    color: #1c4a3e;
+}
+.card{
+    transition: transform 450ms;
+
+}
+
+.card:hover{
+    transform: translateY(-20px);
+}
+
+.sectionTwo__btn:hover{
+    transform: scale(1.1); 
+    transition: all .2s ease-in-out; 
+}
+
+/* !style for sectionThree */
+.sectionTree{
+    background: #dbe6e2;
+    padding: 50px 0;
+}
+
+
+
+.footerSection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+
+/* ! style for mediaqury */
+
+@media all and (max-width: 720px) {
+    /* !media style for sectionOne */
+    .sectionOne{
+        margin-top: 40px;
+    }
+    
+
+    .sectionOne__leftTitle{
+        font-size: 40px;
+    }
+
+    .sectionOne__left__btnGroup{
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .footerSection{
+    grid-template-columns: repeat(1,1fr);
+    }
+}
